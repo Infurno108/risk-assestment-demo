@@ -1,0 +1,96 @@
+What we are looking to fix here is risk assestment
+
+How do we create an AI system that can read past the traditiional biases that are found in traditional real estate systems?
+
+How do we create an AI without introducing any biases that show up in the training data?
+
+We need to use neural nets to break through bias. But at the same time introduce new buyers to houses that they might not have considered. What we are developing here isnt just a single ai, its two in a trench coat. One that detects if the client is risky. And the other that detects what the client is actually interested in.
+
+What we need is a neural network that can function with the absence of variables not just a full input layer, this means possibly training the AI using incomplete data. Or possibly introducing another ai to fill in the missing data for the main one.
+
+"Bracken and Garner noted that AI should be used not to find ways to extend credit to risky borrowers but rather to find responsible borrowers not currently visible using existing systems."
+
+SOCIAL MEDIA, everone just publishes a shit ton of information for free about themselves. And we are dealing with real peopl.
+
+Self employed, gig economy, etc. people who do not fit the "traditional" mold who are perfectly upstanding citizens. Plus there are setbacks like felony, there are ways to use AI that prevent those from becoming setbacks in homes. Housing is the most essential part of the world.
+
+"risky" data from the 2008 housing crisis is not currently acurite. 
+
+Simple common sense data like paying for rent means people pay for loans. 
+
+
+WE MUST MONITOR THIS CONSTANTLY IF NOT THERE IS A CHANCE THE AI SPIRALS INTO SOMETHING OF BIAS 
+
+The issue here is data, without recent data 
+
+Subsegments of people who are failed by the current credit only system
+
+Lost Acess to Credit - Delinquecy, no recent credit activity. They are using old data (past financial snapshot) (Mom + Lo) Median = 43
+:Often have negative info, all data is old
+:median time since last update -> 3 years
+
+Credit Retired - Credit inactive people, 
+:Have stale old credit.
+:median time since last update -> 4.5 years
+
+New to Credit - Very new credit, students, recent immigrants, young people etc.
+:ver new acounts, <6 months
+
+Invisible credit - Gen Z, recent immigrants, or no credit for whatever reason. Median age 27 years.
+:No data, prevousily invisible to credit system
+
+possible data questions:
+
+rent payments
+:average amount payed per month (0 being perfect, -1900000000 being awful)
+:cost of current rent
+:how long have you been paying rent
+:how many times have you been late on rent
+:how many times have you missed rent
+:how many times have you been evicted
+salary
+:how much do you make (per month)
+:how long have you been making this much
+:job position(IFFFFY)
+current bank acount 
+:how much money do you have in your bank acount
+:how long have you had this acount
+:how many times have you been overdrawn
+credit score
+:current credit score
+:rate of change of credit score
+current home
+:worth of any property 
+:how long have you owned this property
+payments on telco
+:how much do you pay for your phone
+:how long have you been paying for this phone
+:how many times have you been late on this payment
+:how many times have you missed this payment
+:how many times have you been disconnected
+utlitity payments
+:how much do you pay for your utilities
+:how long have you been paying for this utility
+:how many times have you been late on this payment
+:how many times have you missed this payment
+checking acounts
+:content in checking acounts 
+:how many checking acounts do you have
+:how long have you had these acounts
+gig job?
+:do you have a gig job
+:rate of flow from gig job
+30 possible inputs
+
+social media? (how on earth this goes in I dont know)
+
+https://www.youtube.com/watch?v=rk5VQRuvOGw&t=2s
+
+8:25 = whats the problem/Why AI?
+
+16:00 = Who is affected? (In the morgage market)
+
+AI needs to be transparent, and explainable. We can not have a black box AI that just spits out a yes or no. We need to know why it said yes or no. Oh the irony that my AI wrote that last block. Thanks buddy btw I love you.
+
+It will need to be able to get a large list of inputs. More then just 20.
+
