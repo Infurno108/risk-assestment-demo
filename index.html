@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+</head>
+
+<body>
+    <h1>Risk assestment AI prototype</h1>
+    <p>This AI was trained using random data, meaning the riskyness score you recieve given your inputs most likely wont make sense. This cite is more of a proof of a concept. If we were to train the AI using proper data it would be able to accuritly give riskyness scores.</p>
+    <label for="rent">How much do you owe for thtis months rent? (0 being payed)</label>
+    <input type="number" id="rent" name="doug"> $
+    <br>
+    <br>
+    <label for="rent">How long have you been renting your current apartment? </label>
+    <input type="number" id="rentTime" name="jerry"> months
+    <br>
+    <br>
+    <label for="rent">What is your salary? </label>
+    <input type="number" id="salary" name="berry"> $/month
+    <br>
+    <br>
+    <label for="rent">How much money is in your bank acount? </label>
+    <input type="number" id="bank" name="flint"> $
+    <br>
+    <br>
+    <label for="rent">How much money do you have in savings? </label>
+    <input type="number" id="savings" name="wack"> $
+    <br>
+    <br>
+    <label for="rent">Do you have a gig job? </label>
+    <input type="checkbox" id="gig" name="wack">
+    <br>
+    <br>
+    <script>
+        async function submit() {
+            rent = document.getElementById("rent").value;
+            rentTime = document.getElementById("rentTime").value;
+            salary = document.getElementById("salary").value;
+            bank = document.getElementById("bank").value;
+            savings = document.getElementById("savings").value;
+            gig = document.getElementById("gig").checked;
+            if (gig == true) {
+                gig = 1;
+            } else {
+                gig = 0;
+            }
+            inputs = [parseInt(rent), parseInt(rentTime), parseInt(salary), parseInt(bank), parseInt(savings), parseInt(gig)]
+            inputs = tf.reshape(inputs, [1, 6])
+            dog = await tf.loadLayersModel('dep/javascriptAI/model.json');
+            output = dog.predict(inputs);
+            outputs = output.dataSync();
+            outputs = Array.from(outputs);
+            final = outputs[0];
+            document.getElementById("output").innerHTML = "The AI gives you a riskyness score of: " + final;
+        };
+    </script>
+    <button onclick="submit()">Submit</button>
+    <p id="output"></p>
+
+
+
+</body>
+
+</html>
